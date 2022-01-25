@@ -1,0 +1,26 @@
+﻿<Window x:Class="Task_Wpf.UpdateAgent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_Wpf"
+        mc:Ignorable="d"
+        Title="UpdateAgent" Height="150" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="10,0,0,0" FontFamily="Comic Sans MS" >Введите приоритет:</TextBlock>
+        <TextBox Name="priorety" FontFamily="Comic Sans MS" Height="30" Grid.Row="1" Margin="10,10,10,10">Приоритет:</TextBox>
+
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,0,0,25" >
+            <Button IsDefault="True" FontFamily="Comic Sans MS" Click="okbtn_Click" x:Name="okbtn" MinWidth="60" Margin="0,0,10,0">OK</Button>
+            <Button IsCancel="True" FontFamily="Comic Sans MS"  MinWidth="60" x:Name="otmen" Click="otmen_Click">Отмена</Button>
+        </WrapPanel>
+
+    </Grid>
+
+</Window>
